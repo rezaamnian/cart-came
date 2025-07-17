@@ -1,0 +1,59 @@
+body {
+  background-color: rgba(0,50,0,1);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.game{margin: auto;
+  width: 660px;
+ position: relative;
+  margin-top:40px;
+  background-color: rgb(7, 20, 20);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap:15px;
+}
+
+.gamecart{
+  position: relative;
+}
+.front{display: block;
+  border-radius: 8px;
+  width:150px;
+  height: 150px;
+}
+.back{display: block;
+  border-radius: 8px;
+  width:150px;
+  height: 150px;
+}
+
+.gamecart .front{
+  transform: rotateY(90deg);
+  position: absolute;
+  transition:all ease-in 0.2s;
+}
+
+.rott  .front{
+  transform: rotateY(0deg);
+  position: absolute;
+  transition-delay: 0.2s;
+}
+.rott .back{
+  transform:rotateY(90deg) ;
+  transition-delay: .2s;
+}
+
+.gamecart .back{
+  transition:all ease-in .2s;
+  transition-delay: 0.2s;
+}
